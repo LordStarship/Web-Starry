@@ -2,24 +2,383 @@
     <title>Starry | Beauty Skincare</title>
     <link rel="icon" type="image/x-icon" href="assets/img/logo.jpg">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <div class="container">
+    <div class="navbar" id="navbar">
         <div class="header">
-            <a href="index.html"><img class="header-logo" src="assets/img/logo-uncut 1.png" alt="Starry Logo"></a>
-            <a class="header-link" href="about.html">About Us</a>
-            <a class="header-link" href="collaboration.html">Collaboration</a>
-            <a class="header-link" href="serum.html">Serum</a>
-            <a class="header-link" href="lotion.html">Lotion</a>
+            <div>
+                <a href="index.html"><img class="header-logo" src="assets/img/logo-uncut 1.png" alt="Starry Logo"></a>
+            </div>
+            <div>
+                <a class="header-link" href="#collaborators">Collaboration</a>
+                <a class="header-link" href="#about-us">About Us</a>
+                <a class="header-link" href="#why-us">Why Us</a>
+                <a class="header-link" href="#product">Our Products</a>
+                <a class="header-link" href="#home">Home</a>
+            </div>
         </div>
     </div>
 
     <div class="container">
+        <div id="home">
+            <div class="flex-container animate2">
+                <div class="flex-col">
+                    <h1 class="fs-7xl">The health of your skin face.</h1>
+                    <p class="fs-md">Choose a correct skincare product that helps you keep your skin healthy. <br>We offers the most suitable skincare products just for you.</p>
+    
+                    <div>
+                        <a  href="products.html"><button class="btn btn-primary">See our product</button></a>
+                    </div>
+                </div>
+    
+                <img src="assets/img/gambar2.png" class="img-fluid animate-img" />
+            </div>
+        </div>
+
+        <div id="product">
+            <div class="flex-container flex-col centered animate">
+                <p class="fs-md primary-text section-bar">PRODUCT</p>
+                <hr class="custom" />
+                <h1 class="fs-4xl">Find what you need for your skin</h1>
+                <p class="fs-sm disabled-text">Here we offer every kind of suitable skin products to suit what you need the best.</p>
+            </div>
+
+            <div id="product-lotion" class="scrollable-x animate">
+                <div class="desc">
+                    <p class="fs-md primary-text section-bar">LOTION</p>
+                    <h1 class="fs-2xl">Moisturize your skin.</h1>
+                    <p class="fs-sm disabled-text">Here we offer every kind of suitable skin products to suit <br>what you need the best.</p>
+
+                    <a href="lotion.html"><button class="btn btn-primary">See more</button></a>
+                </div>
+    
+                <div class="product-box">
+                    <img class="img-fluid" src="assets/img/lotion1.jpeg">
+    
+                    <div class="product-desc">
+                        <div class="wrap-content">
+                            <div class="product-tag">
+                                <p class="tag type-tag">
+                                    Lotion
+                                </p>
+                                <p class="tag date-tag">
+                                    New
+                                </p>
+                            </div>
+
+                            <h3 class="fs-lg">Scarlett Brightening Body Lotion : Jolly</h3>
+                            <p class="fs-sm disabled-text">Describe your product here. Put a little bit description so visitors understand and can read about the product description.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="product-box">
+                    <img class="img-fluid" src="assets/img/lotion2.jpeg">
+    
+                    <div class="product-desc">
+                        <div class="wrap-content">
+                            <div class="product-tag">
+                                <p class="tag type-tag">
+                                    Lotion
+                                </p>
+                                <p class="tag date-tag">
+                                    New
+                                </p>
+                            </div>
+
+                            <h3 class="fs-lg">Scarlett Brightening Body Lotion : Freshy</h3>
+                            <p class="fs-sm disabled-text">Describe your product here. Put a little bit description so visitors understand and can read about the product description.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="product-box">
+                    <img class="img-fluid" src="assets/img/lotion3.jpeg">
+    
+                    <div class="product-desc">
+                        <div class="wrap-content">
+                            <div class="product-tag">
+                                <p class="tag type-tag">
+                                    Lotion
+                                </p>
+                                <p class="tag date-tag">
+                                    New
+                                </p>
+                            </div>
+                            
+                            <h3 class="fs-lg">Scarlett Brightening Body Lotion : Charming</h3>
+                            <p class="fs-sm disabled-text">Describe your product here. Put a little bit description so visitors understand and can read about the product description.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="product-box">
+                    <img class="img-fluid" src="assets/img/lotion4.jpeg">
+    
+                    <div class="product-desc">
+                        <div class="wrap-content">
+                            <div class="product-tag">
+                                <p class="tag type-tag">
+                                    Lotion
+                                </p>
+                                <p class="tag date-tag">
+                                    New
+                                </p>
+                            </div>
+
+                            <h3 class="fs-lg">Scarlett Brightening Body Lotion : Fantasia</h3>
+                            <p class="fs-sm disabled-text">Describe your product here. Put a little bit description so visitors understand and can read about the product description.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="normal" />
+
+            <div id="product-serum" class="scrollable-x animate">
+                <div class="desc">
+                    <p class="fs-md primary-text section-bar">SERUM</p>
+                    <h1 class="fs-2xl">Keeps your skin hydrated.</h1>
+                    <p class="fs-sm disabled-text">Here we offer every kind of suitable skin products to suit <br>what you need the best.</p>
+
+                    <a href="serum.html"><button class="btn btn-primary">See more</button></a>
+                </div>
+    
+                <div class="product-box">
+                    <img class="img-fluid" src="assets/img/serum1.jpeg">
+    
+                    <div class="product-desc">
+                        <div class="wrap-content">
+                            <div class="product-tag">
+                                <p class="tag type-tag">
+                                    Serum
+                                </p>
+                                <p class="tag date-tag">
+                                    New
+                                </p>
+                            </div>
+
+                            <h3 class="fs-lg">Scarlett Brightening Body Lotion : Jolly</h3>
+                            <p class="fs-sm disabled-text">Describe your product here. Put a little bit description so visitors understand and can read about the product description.</p>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="product-box">
+                    <img class="img-fluid" src="assets/img/serum2.jpeg">
+    
+                    <div class="product-desc">
+                        <div class="wrap-content">
+                            <div class="product-tag">
+                                <p class="tag type-tag">
+                                    Serum
+                                </p>
+                                <p class="tag date-tag">
+                                    New
+                                </p>
+                            </div>
+
+                            <h3 class="fs-lg">Scarlett Brightening Body Lotion : Freshy</h3>
+                            <p class="fs-sm disabled-text">Describe your product here. Put a little bit description so visitors understand and can read about the product description.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="product-box">
+                    <img class="img-fluid" src="assets/img/serum3.jpeg">
+    
+                    <div class="product-desc">
+                        <div class="wrap-content">
+                            <div class="product-tag">
+                                <p class="tag type-tag">
+                                    Serum
+                                </p>
+                                <p class="tag date-tag">
+                                    New
+                                </p>
+                            </div>
+                            
+                            <h3 class="fs-lg">Scarlett Brightening Body Lotion : Charming</h3>
+                            <p class="fs-sm disabled-text">Describe your product here. Put a little bit description so visitors understand and can read about the product description.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="product-box">
+                    <img class="img-fluid" src="assets/img/serum4.jpeg">
+    
+                    <div class="product-desc">
+                        <div class="wrap-content">
+                            <div class="product-tag">
+                                <p class="tag type-tag">
+                                    Serum
+                                </p>
+                                <p class="tag date-tag">
+                                    New
+                                </p>
+                            </div>
+
+                            <h3 class="fs-lg">Scarlett Brightening Body Lotion : Fantasia</h3>
+                            <p class="fs-sm disabled-text">Describe your product here. Put a little bit description so visitors understand and can read about the product description.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <img class="img-fluid" src="assets/img/serum5.jpeg">
+    
+                    <div class="product-desc">
+                        <div class="wrap-content">
+                            <div class="product-tag">
+                                <p class="tag type-tag">
+                                    Serum
+                                </p>
+                                <p class="tag date-tag">
+                                    New
+                                </p>
+                            </div>
+
+                            <h3 class="fs-lg">Scarlett Brightening Body Lotion : Fantasia</h3>
+                            <p class="fs-sm disabled-text">Describe your product here. Put a little bit description so visitors understand and can read about the product description.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <img class="img-fluid" src="assets/img/serum6.jpeg">
+    
+                    <div class="product-desc">
+                        <div class="wrap-content">
+                            <div class="product-tag">
+                                <p class="tag type-tag">
+                                    Serum
+                                </p>
+                                <p class="tag date-tag">
+                                    New
+                                </p>
+                            </div>
+
+                            <h3 class="fs-lg">Scarlett Brightening Body Lotion : Fantasia</h3>
+                            <p class="fs-sm disabled-text">Describe your product here. Put a little bit description so visitors understand and can read about the product description.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <img class="img-fluid" src="assets/img/serum7.jpeg">
+    
+                    <div class="product-desc">
+                        <div class="wrap-content">
+                            <div class="product-tag">
+                                <p class="tag type-tag">
+                                    Serum
+                                </p>
+                                <p class="tag date-tag">
+                                    New
+                                </p>
+                            </div>
+
+                            <h3 class="fs-lg">Scarlett Brightening Body Lotion : Fantasia</h3>
+                            <p class="fs-sm disabled-text">Describe your product here. Put a little bit description so visitors understand and can read about the product description.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <img class="img-fluid" src="assets/img/serum8.jpeg">
+    
+                    <div class="product-desc">
+                        <div class="wrap-content">
+                            <div class="product-tag">
+                                <p class="tag type-tag">
+                                    Serum
+                                </p>
+                                <p class="tag date-tag">
+                                    New
+                                </p>
+                            </div>
+
+                            <h3 class="fs-lg">Scarlett Brightening Body Lotion : Fantasia</h3>
+                            <p class="fs-sm disabled-text">Describe your product here. Put a little bit description so visitors understand and can read about the product description.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="why-us">
+            <div class="flex-container centered flex-col animate">
+                <h3 class="fs-md primary-text section-bar">WHY US</h3>
+                <hr class="custom" />
+
+                <div class="flex-container">
+                    <div>
+                        <h1 class="fs-8xl">Natural Skincare Purity for Every Skin</h1>
+                        <img class="img-fluid" src="assets/img/gambar4.jpg">
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="assets/img/gambar3.jpg">
+                        <p>We provide cosmetics and skincare products made with 100% natural ingredients. We also provide supreme quality and service and only deliver qualified products for your skincare needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-container centered flex-col animate" id="review">
+            <h1 class="fs-xl"><q>I absolutely love the products Starry offers to me and the results was very amazing indeed. I would recommend people to check their products because it is really good and they are also very kind to help me pick the product that suits me.</q></h1>
+            <img class="img-fluid avatar" src="assets/img/avatar.jpg">
+            <h4 class="fs-md">Fabriene Estella</h4>
+            <p class="fs-sm disabled-text">Beauty Bloggers</p>
+        </div>
+
+        <div id="about-us">
+            <div class="flex-container centered flex-col animate">
+                <h3 class="fs-md primary-text section-bar">ABOUT US</h3>
+                <hr class="custom" />
+
+                <div class="flex-container">
+                    <img class="img-fluid" src="assets/img/gambar5.jpg">
+                    <div>
+                        <hr class="custom2" />
+
+                        <h1 class="fs-6xl">We are Starry.</h1>
+                        <p class="fs-md disabled-text">Put something that describe your business here. Make it as interesting and as informative as possible. It might help you to describe what your business is. After that, describe what you offers and why the customers should trust you, and also your commitment.</p>
+
+                        <a href="about.html"><button class="btn btn-primary">Learn more</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="collaborators" class="animate">
+            <div class="flex-container flex-col centered">
+                <p class="fs-md primary-text section-bar">OUR COLLABORATOR</p>
+                <hr class="custom" />
+            </div>
+            <div id="collaborator" class="scrollable-x">
+                <div class="sponsors">
+                    <img class="img-fluid" src="assets/img/icon1.png">
+                </div>
+                <div class="sponsors">
+                    <img class="img-fluid" src="assets/img/icon2.png">
+                </div>
+                <div class="sponsors">
+                    <img class="img-fluid" src="assets/img/icon3.png">
+                </div>
+                <div class="sponsors">
+                    <img class="img-fluid" src="assets/img/icon4.png">
+                </div>
+            </div>
+        </div>
+
         <div class="footer">
             <div class="footer-top">
-                <div class="display-flex"><a href="index.html"><img class="footer-link" src="assets/img/logo-uncut 1.png" alt="Starry Logo"></a></div>
+                <div>
+                    <a href="index.html"><img class="footer-logo" src="assets/img/logo-uncut 1.png" alt="Starry Logo"></a>
+                </div>
                 <div>
                     <h3>Product</h3>
                     <ul> 
@@ -35,8 +394,10 @@
                     </ul>
                 </div>
                 <div>
+                    <h3>CONTACT US</h3>
                     <p>Main Office: Bumi Nirbaya Regency No. 22B</p>
                     <p>Phone Number: 081289333111</p>
+                    <a href="https://www.instagram.com/starry.beautyisart/"><img class="footer-img" src="assets/img/instagram-icon.png"></a>
                 </div>
             </div>
             <div class="footer-bottom">
