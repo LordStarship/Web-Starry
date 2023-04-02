@@ -160,6 +160,10 @@ hr.normal{
     height: auto;
 }
 
+.flex-row {
+    flex-direction: row;
+}
+
 /* ================================================================ */
 /* Header ========================================================= */
 
@@ -430,6 +434,37 @@ hr.normal{
 .sponsors img{
     width: 80%;
 }
+
+/* ================================================================ */
+/* Products.html ================================================ */
+
+#products{
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.products-box{
+    position: relative;
+}
+
+.products-box img{
+    max-width: 100%;
+}
+
+.products-box p{
+    position: absolute;
+    right: 35%;
+    bottom: 5%;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+    background-color: var(--primary-active-text-bg);
+    color: black;
+}
+
 
 /* ================================================================ */
 /* Footer ========================================================= */
