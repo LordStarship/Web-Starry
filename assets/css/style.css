@@ -343,7 +343,7 @@ hr.normal{
 /* ================================================================ */
 /* Review ========================================================= */
 
-#review{
+/* #review{
     padding: 50px 100px;
     justify-content: space-between;
     align-items: center;
@@ -368,7 +368,7 @@ hr.normal{
 .avatar{
     width: 8%;
     border-radius: 100%;
-}
+} */
 
 
 /* ================================================================ */
@@ -433,6 +433,7 @@ hr.normal{
 
 .sponsors img{
     width: 80%;
+    padding-left: 920px;
 }
 
 /* ================================================================ */
@@ -455,16 +456,21 @@ hr.normal{
     max-width: 100%;
 }
 
-.products-box p{
-    position: absolute;
-    right: 35%;
-    bottom: 5%;
-    letter-spacing: 0.5rem;
-    font-weight: bold;
-    background-color: var(--primary-active-text-bg);
-    color: black;
+/* ================================================================ */
+/* Lotion.html & Serum.html========================================================= */
+
+.lotion, .serum{
+    display: flex;
 }
 
+.lotion-box, .serum-box{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 
 /* ================================================================ */
 /* Footer ========================================================= */
@@ -508,6 +514,10 @@ hr.normal{
 .footer-top div ul li a{
     text-decoration: none;
     color: black;
+}
+
+.footer-phone{
+    text-decoration: none;
 }
 
 .footer-bottom {
