@@ -424,16 +424,14 @@ hr.normal{
 }
 
 .sponsors{
-    width: 20%;
-    margin-right: 50px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .sponsors img{
-    width: 80%;
-    padding-left: 920px;
+    width: 10%;
 }
 
 /* ================================================================ */
