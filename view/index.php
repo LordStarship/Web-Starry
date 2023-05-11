@@ -1,7 +1,7 @@
 <html>
 <head>
     <title>Starry | Beauty Skincare</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/logo.jpg">
+    <link rel="icon" type="image/x-icon" href="assets/ismg/logo.jpg">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +14,9 @@
                 <a href="index.html"><img class="header-logo" src="assets/img/logo-uncut 1.png" alt="Starry Logo"></a>
             </div>
             <div>
+                <a classs="header-link" href="account.php">
+                    <img class="account-logo" src="assets/img/account.png">
+                </a>
                 <a class="header-link" href="#collaborators">Brands</a>
                 <a class="header-link" href="#about-us">About Us</a>
                 <a class="header-link" href="#why-us">Why Us</a>

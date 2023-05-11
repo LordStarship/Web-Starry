@@ -1,0 +1,18 @@
+:root{
+    --primary-active: #d1a95f;
+    --primary-passive: #e0bf82;
+    --secondary: #faeee9;
+    --tertiary: #a77a95;
+    --disabled: #c3c3d5;
+    --commented: #aeaebb;
+    --focused: #735366;
+    --white-active: #F7f7fb;
+    --white-passive: #edeaea;
+    --black: #313a52;
+
+    --primary-active-text-bg: #efd19b;
+    --primary-active-text: #b18e4b;
+    --tertiary-text-bg: #dfb4ce;
+    --tertiary-text: #8f5d7b;
+    --bright-alt: #F8F7F3;
+}
