@@ -13,7 +13,7 @@
             <div>
                 <a href="index.html"><img class="header-logo" src="assets/img/logo-uncut 1.png" alt="Starry Logo"></a>
             </div>
-            <div>
+            <div class="flex-container flex-row-reverse centered">
                 <a class="header-link" href="account.php">
                     <img class="account-logo" src="assets/img/account.png">
                 </a>

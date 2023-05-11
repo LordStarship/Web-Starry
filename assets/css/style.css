@@ -164,6 +164,11 @@ hr.normal{
     flex-direction: row;
 }
 
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+
 /* ================================================================ */
 /* Header ========================================================= */
 
@@ -190,11 +195,14 @@ hr.normal{
     width: 30%;
 }
 
+.header .account-logo {
+    width: 50px;
+    height: 50px;
+}
+
 .header .header-link {
-    display: inline;
     text-decoration: none;
     color: var(--black);
-    float: right;
     font-size: 1.2rem;
     margin-left: 25px;
 }
@@ -468,6 +476,19 @@ hr.normal{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+/* ================================================================ */
+/* account.php ================================================ */
+
+.login-container {
+    background-color: ;
+    height: 50%;
+}
+
+.login-logo {
+    height: 150px;
+    width: 150px;
 }
 
 /* ================================================================ */
