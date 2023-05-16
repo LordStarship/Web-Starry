@@ -443,52 +443,85 @@ hr.normal{
 }
 
 /* ================================================================ */
-/* Products.html ================================================ */
-
-#products{
-    margin-bottom: 100px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.products-box{
-    position: relative;
-}
-
-.products-box img{
-    max-width: 100%;
-}
-
-/* ================================================================ */
-/* Lotion.html & Serum.html========================================================= */
-
-.lotion, .serum{
-    display: flex;
-}
-
-.lotion-box, .serum-box{
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* ================================================================ */
 /* account.php ================================================ */
 
-.login-container {
-    background-color: ;
-    height: 50%;
+.account-top {
+    height: 30%;
+}
+
+.login-container{
+    height: 62%;
+    background-color: var(--primary-active-text-bg);
 }
 
 .login-logo {
     height: 150px;
     width: 150px;
+}
+
+.login-form {
+    background-color: var(--primary-passive);
+    border: 5px solid var(--primary-active-text);
+    border-radius: 25px;
+    width: 35%;
+}
+
+.login-table {
+    margin: 1em auto 1em auto;
+}
+
+.login-table tr td {
+    padding: 5px;
+}
+
+.login-text {
+    padding-right: 3em;
+}
+
+.login-input {
+    border-radius: 10px;
+    background-color: var(--primary);
+}
+
+input [type='text'] {
+    font-size: var(--font-md);
+}
+
+.login-submit {
+    float: right;
+    height: 2em;
+    width: 20%;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--secondary);
+    pointer-events:stroke;
+}
+
+.forget-text {
+    text-decoration: none;
+}
+
+.register-text {
+    text-decoration: none;
+    float: right;
+}
+
+.login-footer {
+    height: 8%;
+}
+
+.footer-left {
+    float: left;
+    padding-left: 20px;
+}
+
+.footer-right {
+    float: right;
+    padding-right: 20px;
+}
+
+.footer-right a img {
+    width: 45px;
 }
 
 /* ================================================================ */

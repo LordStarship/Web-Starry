@@ -1,5 +1,6 @@
 :root{
     --font-xs: 0.5em;
+    --font-ps: 0.75em;
     --font-sm: 1em;
     --font-md: 1.25em;
     --font-lg: 1.5em;
@@ -43,6 +44,9 @@
 
 .fs-xs{
     font-size: var(--font-xs);
+}
+.fs-ps{
+    font-size: var(--font-ps)
 }
 .fs-sm{
     font-size: var(--font-sm);
