@@ -443,7 +443,7 @@ hr.normal{
 }
 
 /* ================================================================ */
-/* account.php ================================================ */
+/* login.php && register.php ================================================ */
 
 .account-top {
     height: 30%;
@@ -483,27 +483,49 @@ hr.normal{
     background-color: var(--primary);
 }
 
-input [type='text'] {
-    font-size: var(--font-md);
-}
-
 .login-submit {
     float: right;
     height: 2em;
-    width: 20%;
     border: none;
     border-radius: 20px;
     background-color: var(--secondary);
-    pointer-events:stroke;
+    cursor: pointer;
+}
+
+.login-submit:hover {
+    background-color: var(--primary-active);
 }
 
 .forget-text {
     text-decoration: none;
 }
 
+.forget-text:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--black);
+}
+
 .register-text {
     text-decoration: none;
     float: right;
+}
+
+.register-text:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--black);
+}
+
+.have-acc-text {
+    text-decoration: none;
+}
+
+.have-acc-text:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--black);
+}
+
+.failed-confirm {
+    color: red;
 }
 
 .login-footer {
@@ -522,6 +544,37 @@ input [type='text'] {
 
 .footer-right a img {
     width: 45px;
+}
+
+/* ================================================================ */
+/* admin.php && account.php ========================================================= */
+
+.left-container {
+    width: 20%;
+}
+
+.left-container .header-logo {
+    width: 50%;
+    padding: 20px;
+}
+
+.left-container .custom {
+    width: 100%;
+}
+
+.admin-nav {
+    background-color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.admin-nav:hover {
+    background-color: var(--white-passive); 
+    cursor: pointer;
+}
+
+.nav-active {
+    padding-left: 200px;
 }
 
 /* ================================================================ */

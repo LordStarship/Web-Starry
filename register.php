@@ -5,7 +5,7 @@ include "security.php";
 
 <html>
     <head>
-        <title>Login | Starry</title>
+        <title>Register | Starry</title>
         <link rel="icon" type="image/x-icon" href="assets/img/logo.jpg">
         <link rel="stylesheet" href="assets/css/style.css">
         <script src="assets/js/script.js"></script>
@@ -19,34 +19,44 @@ include "security.php";
         
         <div class="login-container flex-container centered">
             <div class="login-form">
-                <form action="login_input.php" autocomplete="off" method="post">
+                <form action="register_input.php" autocomplete="off" method="post">
                     <table class="login-table">
                         <tr>
                             <td>
                                 <p class="login-text fs-md">Username</p>
                             </td>
-                            <td><input class="login-input" type="text" name="username-input" id="username-input" required></td>
+                            <td><input class="login-input" type="text" name="username-reg" id="username-reg" required></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="login-text fs-md">Phone Number</p>
+                            </td>
+                            <td><input class="login-input" type="tel" name="phone-reg" id="phone-reg" required></td>
                         </tr>
                         <tr>
                             <td>
                                 <p class="login-text fs-md">Password</p>
                             </td>
-                            <td><input class="login-input" type="password" name="password-input" id="password-input" required></td>
+                            <td><input class="login-input" type="password" name="password-reg" id="password-reg" required onkeyup="check();"></td>
                         </tr>
                         <tr>
-                            <td colspan="2">
-                                <input class="login-submit fs-sm" type="submit" value="Login"></button>
+                            <td>
+                                <p class="login-text fs-md">Confirm Password</p>
+                            </td>
+                            <td><input class="login-input" type="password" name="confirm-pass" id="confirm-pass" required onkeyup="check();"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="failed-confirm fs-sm" id="failed-confirm"></p>
+                            </td>
+                            <td>
+                                <input class="login-submit fs-sm" type="submit" id="register" value="Register" disabled></button>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <a class="forget-text" href="forgot-pass.php">
-                                    <p class="fs-ps">Forgot your password?</p>
-                                </a>
-                            </td>
-                            <td>
-                                <a href="register.php">
-                                    <p class="register-text fs-ps">New? Register here!</p>
+                                <a class="have-acc-text" href="login.php">
+                                    <p class="fs-ps">Already have an account?</p>
                                 </a>
                             </td>
                         </tr>
@@ -66,4 +76,6 @@ include "security.php";
         </div>
     </body>
 </html>
+
+
 

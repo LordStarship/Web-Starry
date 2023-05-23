@@ -22,4 +22,18 @@ window.onload = function(){
     var tag = document.getElementsByClassName('animate2')[0];
 
     tag.classList.add('fadeIn');
-}
+};
+
+var check = function() {
+    const password = document.getElementById('password-reg').value;
+    const confirm = document.getElementById('confirm-pass').value;
+    if (confirm != "") { 
+        if (password == confirm) {
+            document.getElementById('failed-confirm').innerHTML = '';
+            document.getElementById('register').disabled = false;
+        } else {
+            document.getElementById('failed-confirm').innerHTML = 'Konfirmasi password gagal';
+            document.getElementById('register').disabled = true;
+        }
+    }
+};
