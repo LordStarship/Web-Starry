@@ -1,7 +1,7 @@
 <html>
 <head>
     <title>Starry | Beauty Skincare</title>
-    <link rel="icon" type="image/x-icon" href="assets/ismg/logo.jpg">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.jpg">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
     <div class="navbar" id="navbar">
         <div class="header">
             <div>
-                <a href="index.html"><img class="header-logo" src="assets/img/logo-uncut 1.png" alt="Starry Logo"></a>
+                <a href="index.php"><img class="header-logo" src="assets/img/logo-uncut 1.png" alt="Starry Logo"></a>
             </div>
             <div class="flex-container flex-row-reverse centered">
                 <a class="header-link" href="login.php">
@@ -372,7 +372,7 @@
         <div class="footer">
             <div class="footer-top">
                 <div>
-                    <a href="index.html"><img class="footer-logo" src="assets/img/logo-uncut 1.png" alt="Starry Logo"></a>
+                    <a href="index.php"><img class="footer-logo" src="assets/img/logo-uncut 1.png" alt="Starry Logo"></a>
                 </div>
                 <div>
                     <h3>Product</h3>

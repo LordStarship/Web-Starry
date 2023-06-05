@@ -13,7 +13,6 @@ $conf_pass = mysqli_real_escape_string($conn, md5($_POST['password-reg']));
 $sql = "SELECT * FROM account WHERE username='$register_name' OR phone='$phone_name';";
 $query = mysqli_query($conn, $sql);
 $num = mysqli_num_rows($query);
-$result = mysqli_fetch_array($query);
 
 if ($num == 0) {
     $sql = "INSERT INTO account (username, phone, pass) VALUES ('$conf_name', '$conf_phone', '$conf_pass');";

@@ -168,6 +168,9 @@ hr.normal{
     flex-direction: row-reverse;
 }
 
+.flex-start {
+    align-items: flex-start;
+}
 
 /* ================================================================ */
 /* Header ========================================================= */
@@ -549,8 +552,14 @@ hr.normal{
 /* ================================================================ */
 /* admin.php && account.php ========================================================= */
 
+.admin-container {
+    height: 100%;
+    align-items: flex-start;
+}
+
 .left-container {
     width: 20%;
+    text-align: center;
 }
 
 .left-container .header-logo {
@@ -562,10 +571,20 @@ hr.normal{
     width: 100%;
 }
 
+.right-container {
+    width: 80%;
+    background-color: var(--primary-active-text-bg);
+    height: 100%;
+}
+
 .admin-nav {
+    text-decoration: none;
     background-color: white;
-    text-align: center;
     width: 100%;
+}
+
+.admin-nav a {
+    text-decoration: none;
 }
 
 .admin-nav:hover {
@@ -573,9 +592,24 @@ hr.normal{
     cursor: pointer;
 }
 
-.nav-active {
-    padding-left: 200px;
+.nav-active{
+    background-color: var(--secondary);
 }
+
+.main-container {
+    width: 100%;
+}
+
+.account-container {
+    padding: 30px;
+}
+
+.account-bar {
+    color: var(--black);
+    letter-spacing: 0.15em;
+    font-weight: 600;
+}
+
 
 /* ================================================================ */
 /* Footer ========================================================= */
