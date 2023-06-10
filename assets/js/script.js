@@ -37,3 +37,31 @@ var check = function() {
         }
     }
 };
+
+var admincheck = function() {
+    const adminpassword = document.getElementById('pass-admin').value;
+    const adminconfirm = document.getElementById('confirm-pass-admin').value;
+    if (adminconfirm != "") { 
+        if (adminpassword == adminconfirm) {
+            document.getElementById('admin-failed-confirm').innerHTML = '';
+            document.getElementById('admin-register').disabled = false;
+        } else {
+            document.getElementById('admin-failed-confirm').innerHTML = 'Konfirmasi password gagal';
+            document.getElementById('admin-register').disabled = true;
+        }
+    }
+};
+
+var pass_check = function() {
+    const new_pass = document.getElementById('new-pass').value;
+    const new_pass_conf = document.getElementById('new-pass-conf').value;
+    if (new_pass != "") { 
+        if (new_pass == new_pass_conf) {
+            document.getElementById('pass-failed-confirm').innerHTML = '';
+            document.getElementById('password-edit').disabled = false;
+        } else {
+            document.getElementById('pass-failed-confirm').innerHTML = 'Konfirmasi password gagal';
+            document.getElementById('password-edit').disabled = true;
+        }
+    }
+};

@@ -19,7 +19,7 @@ include "security.php";
         
         <div class="login-container flex-container centered">
             <div class="login-form">
-                <form action="register_input.php" autocomplete="off" method="post">
+                <form action="register_input.php" autocomplete="none" method="post">
                     <table class="login-table">
                         <tr>
                             <td>

@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "connection.php";
 
 $uname = $_POST['username-input'];
@@ -12,11 +13,9 @@ $role = $result['role'];
 
 if ($num == 0) {
     echo "<script>location.href='login.php'; alert('Login Gagal!'); </script>";
-    ?>
-    <?php
 } else {
     $_SESSION['acc'] = $uname;
-    if ($role == 'admin') {
+    if ($role == 'superadmin') {
         echo "<script>location.href='admin.php'</script>";
     } else if ($role == 'user') {
         echo ("<script>location.href='account.php'</script>");

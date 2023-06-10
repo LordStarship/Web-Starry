@@ -3,7 +3,7 @@
 
 /* Root Properties ================================================ */
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -12,11 +12,11 @@ body {
     font-family: Lato, Geneva, Tahoma, sans-serif;
 }
 
-p, h1, h2, h3, h4, h5, h6{
+p, h1, h2, h3, h4, h5, h6 {
     color: var(--black);
 }
 
-hr.custom{
+hr.custom {
     margin: 0 0 30px 0;
     border: 0;
     height: 30px;
@@ -27,7 +27,7 @@ hr.custom{
     background-size: 70%;
 }
 
-hr.custom2{
+hr.custom2 {
     margin: 0;
     border: 0;
     height: 50px;
@@ -38,42 +38,61 @@ hr.custom2{
     background-size: 100%;
 }
 
-hr.normal{
+hr.normal {
     border: 1.5px double var(--white-passive);
     margin: 50px 100px;
 }
 
-.btn{
+.btn {
     padding: 10px 20px;
     border: 0;
     border-radius: 5px;
     font-size: var(--font-sm);
 }
 
-.btn-primary{
+.btn-primary {
     background-color: var(--primary-passive);
     color: var(--white-active);
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: var(--primary-active);
 }
 
-.btn-secondary{
+.btn-secondary {
     background-color: var(--white-active);
     color: var(--primary-passive);
 }
 
-.btn-secondary:hover{
+.btn-secondary:hover {
     background-color: var(--white-passive);
 }
 
-.section-bar{
+.btn-profile {
+    background-color: var(--primary-active);
+    color: var(--black)
+}
+
+.btn-profile:hover {
+    background-color: var(--primary-passive);
+    cursor: pointer;
+}
+
+.section-bar {
     letter-spacing: 0.2em;
     font-weight: 600;
 }
 
-.scrollable-x{
+.table-bordered, .table-bordered th, .table-bordered td {
+    border: 1px solid var(--black);
+    border-collapse: collapse;
+}
+
+.table-responsive {
+    display: flex;
+}
+
+.scrollable-x {
     overflow-x: scroll;
     white-space: nowrap;
     max-width: 100%;
@@ -82,11 +101,11 @@ hr.normal{
     scrollbar-width: none; /* Firefox support */
 }
 
-.scrollable-x::-webkit-scrollbar{ /* Chrome, Safari, Opera support */
+.scrollable-x::-webkit-scrollbar { /* Chrome, Safari, Opera support */
     display: none;
 }
 
-.tag{
+.tag {
     padding: 5px 10px;
     border-radius: 5px;
     margin: 10px 0;
@@ -94,12 +113,12 @@ hr.normal{
     margin-right: 10px;
 }
 
-.tag.type-tag{
+.tag.type-tag {
     background-color: var(--primary-active-text-bg);
     color: var(--primary-active-text);
 }
 
-.tag.date-tag{
+.tag.date-tag {
     background-color: var(--tertiary-text-bg);
     color: var(--tertiary-text);
 }
@@ -110,30 +129,30 @@ hr.normal{
     100% {transform: rotate(0.9deg);}
 }
 
-.animate-img{
+.animate-img {
     animation-name: animasi-gambar1;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
 
-.animate{
+.animate {
     opacity: 0;
     transform: translate3d(0, -50px, 0);
     transition: 0.5s all ease-in-out;
 }
 
-.animate2{
+.animate2 {
     opacity: 0;
     transition: 0.5s all ease-in-out;
 }
 
-.fadeIn{
+.fadeIn {
     opacity: 1;
     transition: 0.7s all ease-in-out;
 }
 
-.fadeUpIn{
+.fadeUpIn {
     opacity: 1;
     transform: translate3d(0, 0, 0);
     transition: 0.5s all ease-in-out;
@@ -142,20 +161,20 @@ hr.normal{
 /* ================================================================ */
 /* Flex Properties ================================================ */
 
-.flex-container{
+.flex-container {
     display: flex;
 }
 
-.flex-col{
+.flex-col {
     flex-direction: column;
 }
 
-.centered{
+.centered {
     justify-content: center;
     align-items: center;
 }
 
-.img-fluid{
+.img-fluid {
     max-width: 100%;
     height: auto;
 }
@@ -175,14 +194,14 @@ hr.normal{
 /* ================================================================ */
 /* Header ========================================================= */
 
-.navbar{
+.navbar {
     position: fixed;
     z-index: 1;
     width: 100%;
     transition-duration: 0.2s;
 }
 
-.navbar-colored{
+.navbar-colored {
     transition-duration: 0.2s;
     background-color: #FDF8F5;
 }
@@ -222,54 +241,54 @@ hr.normal{
     background-color: #FAEEE9;
 }
 
-#home div div:first-child{
+#home div div:first-child {
     display: flex;
     flex: 6;
     justify-content: center;
 }
 
-#home img{
+#home img {
     width: 35%;
 }
 
-#home h1{
+#home h1 {
     margin: 0;
     padding: 0;
 }
 
-#home p{
+#home p {
     line-height: 2em;
 }
 
-#home{
+#home {
     font-family: SourceSerifPro;
 }
 
 /* ================================================================ */
 /* Products ======================================================= */
 
-#product{
+#product {
     padding: 140px 0;
 }
 
-#product .flex-container{
+#product .flex-container {
     padding: 0 100px;
 }
 
-#product .flex-container h1{
+#product .flex-container h1 {
     margin: 0;
     padding: 0;
 }
 
-.desc{
+.desc {
     margin-right: 50px;
 }
 
-.desc p:first-child{
+.desc p:first-child {
     margin-top: 0;
 }
 
-#product-lotion, #product-serum{
+#product-lotion, #product-serum {
     margin-top: 50px;
     display: flex;
     flex-wrap: nowrap;
@@ -278,105 +297,105 @@ hr.normal{
     justify-content: space-between;
 }
 
-.product-box{
+.product-box {
     min-width: 30%;
     align-self: stretch;
     margin-right: 50px;
 }
 
-.product-box img{
+.product-box img {
     margin-bottom: 50px;
 }
 
-.wrap-content{
+.wrap-content {
     white-space: normal;
     word-break: break-word;
 }
 
-.wrap-content p{
+.wrap-content p {
     text-align: justify;
     line-height: 1.5em;
 }
 
-.product-desc{
+.product-desc {
     padding: 15px;
 }
 
-.product-desc h3{
+.product-desc h3 {
     margin: 5px 0;
 }
 
-.product-tag{
+.product-tag {
     display: flex;
 }
 
 /* ======================================================== */
 /* Why Us? ======================================================== */
 
-#why-us{
+#why-us {
     background-color: var(--bright-alt);
     padding: 140px 100px;
 }
 
-#why-us h1{
+#why-us h1 {
     margin: 0;
     padding: 0;
     font-family: NewYork;
 }
 
-#why-us .flex-container{
+#why-us .flex-container {
     justify-content: space-between;
 }
 
-#why-usdiv .flex-container div:first-child{
+#why-usdiv .flex-container div:first-child {
     padding-right: 10px;
 }
 
-#why-us div .flex-container div:last-child{
+#why-us div .flex-container div:last-child {
     padding-left: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-#why-us div .flex-container div:last-child p{
+#why-us div .flex-container div:last-child p {
     line-height: 2em;
 }
 
-#why-us div .flex-container h1{
+#why-us div .flex-container h1 {
     padding-bottom: 20px;
 }
 
-#why-us div .flex-container img{
+#why-us div .flex-container img {
     border-radius: 8px;
 }
 
 /* ================================================================ */
 /* Review ========================================================= */
 
-/* #review{
+/* #review {
     padding: 50px 100px;
     justify-content: space-between;
     align-items: center;
 }
 
-#review h1{
+#review h1 {
     text-align: center;
     line-height: 1.7em;
     padding-bottom: 30px;
 }
 
-#review p{
+#review p {
     padding: 0;
     margin: 0;
 }
 
-#review h4{
+#review h4 {
     padding: 20px 0 10px 0;
     margin: 0;
 }
 
-.avatar{
+.avatar {
     width: 8%;
     border-radius: 100%;
 } */
@@ -385,47 +404,47 @@ hr.normal{
 /* ================================================================ */
 /* About us ======================================================= */
 
-#about-us{
+#about-us {
     padding: 140px 100px;
     justify-content: space-between;
     align-items: center;
     background-color: var(--bright-alt);
 }
 
-#about-us div.flex-container{
+#about-us div.flex-container {
     align-items: center;
     justify-content: space-between;
 }
 
-#about-us div.flex-container img{
+#about-us div.flex-container img {
     width: 50%;
     border-radius: 8px;
 }
 
-#about-us div.flex-container div{
+#about-us div.flex-container div {
     padding: 30px;
 }
 
-#about-us div.flex-container div p{
+#about-us div.flex-container div p {
     line-height: 1.7em;
 }
 
-#about-us div.flex-container div h1{
+#about-us div.flex-container div h1 {
     margin: 0;
 }
 
 /* ================================================================ */
 /* Collaborator =================================================== */
 
-#collaborators{
+#collaborators {
     padding: 100px 0 120px 0;
 }
 
-#collaborator div.flex-container{
+#collaborator div.flex-container {
     padding: 0 100px;
 }
 
-#collaborator{
+#collaborator {
     margin-top: 50px;
     display: flex;
     flex-wrap: nowrap;
@@ -434,14 +453,14 @@ hr.normal{
     justify-content: space-between;
 }
 
-.sponsors{
+.sponsors {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.sponsors img{
+.sponsors img {
     width: 10%;
 }
 
@@ -550,7 +569,7 @@ hr.normal{
 }
 
 /* ================================================================ */
-/* admin.php && account.php ========================================================= */
+/* admin.php ========================================================= */
 
 .admin-container {
     height: 100%;
@@ -574,7 +593,6 @@ hr.normal{
 .right-container {
     width: 80%;
     background-color: var(--primary-active-text-bg);
-    height: 100%;
 }
 
 .admin-nav {
@@ -598,10 +616,15 @@ hr.normal{
 
 .main-container {
     width: 100%;
+    height: 100%;
+    overflow-y: auto;
 }
 
+/* ================================================================ */
+/* profile.php ========================================================= */
+
 .account-container {
-    padding: 30px;
+    padding-left: 30px;
 }
 
 .account-bar {
@@ -610,6 +633,46 @@ hr.normal{
     font-weight: 600;
 }
 
+.profile-container {
+    height: 10%;
+}
+
+.profile-container tr td {
+    padding-top: 10px;
+}
+
+.profile-change {
+    text-decoration: none;
+    color: var(--black)
+}
+
+.profile-change:hover {
+    text-decoration: underline;
+}
+
+.delete-user {
+    float: right;
+}
+
+.table-del {
+    width: 90%;
+}
+
+.table-del-id {
+    width: 100px;
+}
+
+.table-del-uname {
+    width: 500px;
+}
+
+.table-del-tel {
+    width: 300px;
+}
+
+.table-del-role {
+    width: 200px;
+}
 
 /* ================================================================ */
 /* Footer ========================================================= */

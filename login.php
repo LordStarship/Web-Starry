@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "connection.php";
 ?>
 
@@ -12,13 +13,15 @@ include "connection.php";
     </head>
     <body>
     <div class="container">
-        <div class="account-top flex-container centered">
-            <img class="login-logo" src="assets/img/logo-uncut 1.png">
-        </div>
+        <a href="index.php">
+            <div class="account-top flex-container centered">
+                <img class="login-logo" src="assets/img/logo-uncut 1.png">
+            </div>
+        </a>
         
         <div class="login-container flex-container centered">
             <div class="login-form">
-                <form action="login_input.php" autocomplete="off" method="post">
+                <form action="login_input.php" autocomplete="none" method="post">
                     <table class="login-table">
                         <tr>
                             <td>
@@ -34,7 +37,7 @@ include "connection.php";
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <input class="login-submit fs-sm" type="submit" value="Login"></button>
+                                <input class="btn" type="submit" value="Login"></button>
                             </td>
                         </tr>
                         <tr>
