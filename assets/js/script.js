@@ -65,3 +65,17 @@ var pass_check = function() {
         }
     }
 };
+
+var recover_check = function() {
+    const rec_pass = document.getElementById('password-recover-new').value;
+    const rec_pass_conf = document.getElementById('confirm-pass-recover-new').value;
+    if (rec_pass != "") { 
+        if (rec_pass == rec_pass_conf) {
+            document.getElementById('recover-failed-confirm').innerHTML = '';
+            document.getElementById('recover-button').disabled = false;
+        } else {
+            document.getElementById('recover-failed-confirm').innerHTML = 'Konfirmasi password gagal';
+            document.getElementById('recover-button').disabled = true;
+        }
+    }
+};

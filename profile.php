@@ -37,11 +37,11 @@ else
                     <td><input name="role-profile" id="role-profile" type="text" value="<?=$rows[('role')];?>" disabled></td>
                 </tr>
                 <tr>
-                    <td><label class="fs-sm" for="session-profile">Session </label></td>
+                    <td><label class="fs-sm" for="session-profile">Session Number</label></td>
                     <td><input name="session-profile" id="session-profile" type="text" value="<?=md5($rows[('account_id')]);?>" disabled></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><p class="fs-ps">Your session is important for recovering your password.</td>
+                    <td colspan="2"><p class="fs-ps">Your session is important for recovering your password. <br> Double click and copy to save for further recovery.</td>
                 </tr>
                 <tr>
                     <td colspan="2"><a class="profile-change fs-ps" href=<?=$link_edit;?>>Change your profile information?</a></td>
