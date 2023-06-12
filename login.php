@@ -1,6 +1,8 @@
 <?php
 session_start();
 include "connection.php";
+if(isset($_SESSION['acc'])) { header('location: admin.php'); }
+else {
 ?>
 
 <html>
@@ -37,7 +39,7 @@ include "connection.php";
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <input class="btn" type="submit" value="Login"></button>
+                                <input class="btn btn-profile" type="submit" value="Login"></button>
                             </td>
                         </tr>
                         <tr>
@@ -68,4 +70,6 @@ include "connection.php";
         </div>
     </body>
 </html>
-
+<?php
+}
+?>

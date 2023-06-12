@@ -191,6 +191,10 @@ hr.normal {
     align-items: flex-start;
 }
 
+.flex-warp {
+    flex-wrap: wrap;
+}
+
 /* ================================================================ */
 /* Header ========================================================= */
 
@@ -672,6 +676,22 @@ hr.normal {
 
 .table-del-role {
     width: 200px;
+}
+
+/* ================================================================ */
+/* inventory.php ========================================================= */
+
+.inventory-container {
+    padding-left: 30px;
+}
+
+.inventory-menu .product-box {
+    min-width: 20%;
+    margin-right: 50px;
+}
+
+.inventory-menu .product-box img {
+    margin-bottom: 50px;
 }
 
 /* ================================================================ */
