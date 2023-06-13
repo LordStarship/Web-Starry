@@ -12,9 +12,11 @@ include "../config/connection.php";
     </head>
     <body>
     <div class="container">
-        <div class="account-top flex-container centered">
-            <img class="login-logo" src="../assets/img/logo-uncut 1.png">
-        </div>
+        <a href="../index.php">
+            <div class="account-top flex-container centered">
+                <img class="login-logo" src="../assets/img/logo-uncut 1.png">
+            </div>
+        </a>
         
         <div class="login-container flex-container centered">
             <div class="login-form">
