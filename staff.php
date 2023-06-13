@@ -5,8 +5,8 @@ include "config/connection.php";
 
 <html>
 <head>
-    <title>Admin Dashboard | Starry - Beauty Skincare</title>
-    <link rel="icon" type="image/x-icon" href="assets/ismg/logo.jpg">
+    <title>Staff Dashboard | Starry - Beauty Skincare</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.jpg">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
