@@ -22,6 +22,18 @@ $session = $_SESSION['acc'];
                 <a href="staff.php?menu=inventory&action=reset" class="btn btn-profile inventory-menu">Reset Inventory</a>
             </div>
             <p class="fs-sm">_____________</p>
+            <form action="staff.php?menu=inventory&action=search" method="post">
+                <table class="profile-container">
+                    <tr>
+                        <td><input id="delete-search" name="delete-search" class="search-bar" type="text" placeholder="Search..."></td>
+                        <td colspan="2"><input class="btn-profile" type="submit" id="inventory-search" value="Search"></td>
+                    </tr>
+                </table>
+            </form>
+            <?php
+            if ($action == "search") { include "inventory_search.php"; }
+            else {
+            ?>
             <table class="table-bordered table-del">
                 <tr>
                     <th width="10">ID Produk</th>
@@ -66,6 +78,7 @@ $session = $_SESSION['acc'];
                 }
                 ?>
             </table>
+            <?php } ?>
         </div>
     </div>
 </html>
