@@ -12,7 +12,7 @@
         </tr>
         <tr>
             <td><label class="fs-sm" for="product-desc-add">Description </label></td>
-            <td><input name="product-desc-add" id="product-desc-add" type="text" required></td>
+            <td><textarea name="product-desc-add" id="product-desc-add" rows="3" required></textarea></td>
         </tr>
         <tr>
             <td><label class="fs-sm" for="product-tag-add">Tag </label></td>

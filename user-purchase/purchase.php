@@ -8,9 +8,9 @@ $session = $_SESSION['acc'];
         <div class="inventory-container flex-container flex-col flex-start">
             <p class="account-bar fs-md">CATALOG</p>
             <?php
-            $action = isset($_GET['action'])?$_GET['action']:"";
-            if ($action == "purchase")  { include "purchase_order.php"; }
-            else {
+            // $action = isset($_GET['action'])?$_GET['action']:"";
+            // if ($action == "purchase")  { include "purchase_order.php"; }
+            // else {
             ?>
             <table class="table-bordered table-del">
                 <tr>
@@ -55,6 +55,3 @@ $session = $_SESSION['acc'];
         </div>
     </div>
 </html>
-<?php
-}
-?>

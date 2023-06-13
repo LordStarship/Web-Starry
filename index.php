@@ -1,3 +1,10 @@
+<?php
+include "config/connection.php";
+
+$sql = "SELECT * FROM product WHERE tag = '1'";
+$sql2 = "SELECT * FROM product WHERE tag = '2'";
+?>
+
 <html>
 <head>
     <title>Starry | Beauty Skincare</title>
@@ -44,6 +51,7 @@
                 <hr class="custom" />
                 <h1 class="fs-4xl">Temukan produk yang cocok bagi kulitmu</h1>
                 <p class="fs-sm disabled-text">Starry memberikan pilihan produk-produk kesehatan kulit pilihan bagi kamu.</p>
+                <a href="login/login.php"><button class="btn btn-tertiary section-bar">ORDER NOW</button></a>
             </div>
 
             <div id="product-lotion" class="scrollable-x animate">
@@ -52,86 +60,36 @@
                     <h1 class="fs-2xl">Lembabkan kulitmu.</h1>
                     <p class="fs-sm disabled-text">Pilihlah produk lotion yang sehat<br>dan cocok bagimu.</p>
                 </div>
-    
+                <?php
+                $query = mysqli_query($conn, $sql);
+                while($rows = mysqli_fetch_array(($query)))
+                {
+                $product_photo = "default.jpg";
+                if($rows['image'] != "") { $product_photo = $rows['image']; }
+                $link_photo  = "assets/img/$product_photo";
+
+                $rows['tag'] = ($rows['tag'] == 1) ? "Lotion" : "Serum";
+                ?>
                 <div class="product-box">
-                    <img class="img-fluid" src="assets/img/lotion1.png">
+                    <img class="img-fluid" src="<?=$link_photo;?>">
     
                     <div class="product-desc">
                         <div class="wrap-content">
                             <div class="product-tag">
                                 <p class="tag type-tag">
-                                    Lotion
+                                    <?=$rows['tag'];?>
                                 </p>
                                 <p class="tag date-tag">
                                     New
                                 </p>
                             </div>
 
-                            <h3 class="fs-lg">Scarlett | Brightening Fragrance Body Lotion : Jolly</h3>
-                            <p class="fs-sm disabled-text">Dengan kandungan Glutathione, Vitamin E, Niacinamide & Kojic Acid, Jolly akan membuat kulitmu indah dan tampak cantik.</p>
+                            <h3 class="fs-lg"><?=$rows['nama'];?></h3>
+                            <p class="fs-sm disabled-text"><?=$rows['deskripsi'];?></p>
                         </div>
                     </div>
                 </div>
-    
-                <div class="product-box">
-                    <img class="img-fluid" src="assets/img/lotion2.png">
-    
-                    <div class="product-desc">
-                        <div class="wrap-content">
-                            <div class="product-tag">
-                                <p class="tag type-tag">
-                                    Lotion
-                                </p>
-                                <p class="tag date-tag">
-                                    New
-                                </p>
-                            </div>
-
-                            <h3 class="fs-lg">Scarlett | Brightening Fragrance Body Lotion : Freshy</h3>
-                            <p class="fs-sm disabled-text">Kandungan Glutathione dan Vitamin E yang sangat bagus dan efektif untuk membantu merawat kulit tubuh menjadikan Freshy sebagai lotion yang sehat bagi kulitmu.</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="product-box">
-                    <img class="img-fluid" src="assets/img/lotion3.png">
-    
-                    <div class="product-desc">
-                        <div class="wrap-content">
-                            <div class="product-tag">
-                                <p class="tag type-tag">
-                                    Lotion
-                                </p>
-                                <p class="tag date-tag">
-                                    New
-                                </p>
-                            </div>
-                            
-                            <h3 class="fs-lg">Scarlett | Brightening Fragrance Body Lotion : Charming</h3>
-                            <p class="fs-sm disabled-text">Kandungan Glutathione dan Vitamin E yang sangat bagus dan efektif untuk membantu merawat kulit tubuh menjadikan Charming sebagai lotion yang sehat bagi kulitmu.</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="product-box">
-                    <img class="img-fluid" src="assets/img/lotion4.png">
-    
-                    <div class="product-desc">
-                        <div class="wrap-content">
-                            <div class="product-tag">
-                                <p class="tag type-tag">
-                                    Lotion
-                                </p>
-                                <p class="tag date-tag">
-                                    New
-                                </p>
-                            </div>
-
-                            <h3 class="fs-lg">Scarlett | Brightening Fragrance Body Lotion : Fantasia</h3>
-                            <p class="fs-sm disabled-text">Dengan kandungan Glutathione, Vitamin E, Niacinamide & Kojic Acid, Fantasia akan membuat kulitmu indah dan tampak cantik.</p>
-                        </div>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
 
             <hr class="normal" />
@@ -142,167 +100,35 @@
                     <h1 class="fs-2xl">Pertahankan kecantikan kulitmu.</h1>
                     <p class="fs-sm disabled-text">Pilihlah produk serum yang cocok<br>dan aman bagi kulitmu.</p>
                 </div>
-    
+                <?php
+                $query = mysqli_query($conn, $sql2);
+                while($rows = mysqli_fetch_array(($query)))
+                {
+                $product_photo = "default.jpg";
+                if($rows['image'] != "") { $product_photo = $rows['image']; }
+                $link_photo  = "assets/img/$product_photo";
+
+                $rows['tag'] = ($rows['tag'] == 1) ? "Lotion" : "Serum";
+                ?>
                 <div class="product-box">
-                    <img class="img-fluid" src="assets/img/serum1.jpeg">
+                    <img class="img-fluid" src="<?=$link_photo;?>">
     
                     <div class="product-desc">
                         <div class="wrap-content">
                             <div class="product-tag">
                                 <p class="tag type-tag">
-                                    Serum
+                                    <?=$rows['tag'];?>
                                 </p>
                                 <p class="tag date-tag">
                                     New
                                 </p>
                             </div>
-
-                            <h3 class="fs-lg">Scarlett | Serum – Niacinamide 5% Beta Glucan 7 Phyto Extract</h3>
-                            <p class="fs-sm disabled-text">Kandungan Niacinamide 5%, Beta Glucan, 7 Phyto Extracts, Tego Cosmo C100 (Creatine), dan Allantoi pada serum ini memberikan manfaat yang banyak seperti melembabkan kulit dan mencegah noda hitam pada kulit.</p>
+                            <h3 class="fs-lg"><?=$rows['nama'];?></h3>
+                            <p class="fs-sm disabled-text"><?=$rows['deskripsi'];?></p>
                         </div>
                     </div>
                 </div>
-                    
-                <div class="product-box">
-                    <img class="img-fluid" src="assets/img/serum2.jpeg">
-    
-                    <div class="product-desc">
-                        <div class="wrap-content">
-                            <div class="product-tag">
-                                <p class="tag type-tag">
-                                    Serum
-                                </p>
-                                <p class="tag date-tag">
-                                    New
-                                </p>
-                            </div>
-
-                            <h3 class="fs-lg">Scarlett | Body Serum – Happy</h3>
-                            <p class="fs-sm disabled-text">Body Serum Happy dapat mencerahkan kulit dengan bantuan dari Glutathione + Niacinamide + Glycolic Acid yang dapat menjadikan kulit tampak lebih mulus dan mengangkat sel-sel mati pada kulit.</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="product-box">
-                    <img class="img-fluid" src="assets/img/serum3.jpeg">
-    
-                    <div class="product-desc">
-                        <div class="wrap-content">
-                            <div class="product-tag">
-                                <p class="tag type-tag">
-                                    Serum
-                                </p>
-                                <p class="tag date-tag">
-                                    New
-                                </p>
-                            </div>
-                            
-                            <h3 class="fs-lg">Scarlett | Serum – Brightly Ever After</h3>
-                            <p class="fs-sm disabled-text">Kandungan Phyto Whitening, Glutathione, Vitamin C, Niacinamide dan Lavender Wate pada Brightly Ever After membantu menghilangkan minyak pada muka dan memudarkan noda di wajah.</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="product-box">
-                    <img class="img-fluid" src="assets/img/serum4.jpeg">
-    
-                    <div class="product-desc">
-                        <div class="wrap-content">
-                            <div class="product-tag">
-                                <p class="tag type-tag">
-                                    Serum
-                                </p>
-                                <p class="tag date-tag">
-                                    New
-                                </p>
-                            </div>
-
-                            <h3 class="fs-lg">Scarlett | Serum – Skin Smoothing Retinol Serum</h3>
-                            <p class="fs-sm disabled-text">Skin Smoothing Retinol Serum mengandung Encapsulated Retinol, Pomegranate Extract, Hexapeptide-8, Allantoin dan Vitamin C yang berguna untuk memperbaiki tekstur kulit dan menyamarkan kerutan pada wajah.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-box">
-                    <img class="img-fluid" src="assets/img/serum5.jpeg">
-    
-                    <div class="product-desc">
-                        <div class="wrap-content">
-                            <div class="product-tag">
-                                <p class="tag type-tag">
-                                    Serum
-                                </p>
-                                <p class="tag date-tag">
-                                    New
-                                </p>
-                            </div>
-
-                            <h3 class="fs-lg">Scarlett | Deep Hydration Firming Eye Serum – Age Delay Series</h3>
-                            <p class="fs-sm disabled-text">Kandungan Marine Post Biotic, Tranexamic Acid, Tetrapeptide-5, Hyaluronic Acid Booster, Bifida Ferment Lysate, Triple Ceramide Compiex, Bio Plavita, dan Allantoin membuat kerutan pada wajah menjadi samar dan merawat elastisitas kulit di sekitar mata.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-box">
-                    <img class="img-fluid" src="assets/img/serum6.jpeg">
-    
-                    <div class="product-desc">
-                        <div class="wrap-content">
-                            <div class="product-tag">
-                                <p class="tag type-tag">
-                                    Serum
-                                </p>
-                                <p class="tag date-tag">
-                                    New
-                                </p>
-                            </div>
-
-                            <h3 class="fs-lg">Scarlett | Serum – Glowtening</h3>
-                            <p class="fs-sm disabled-text">Kandungan Tranexamide Acid, Niacinamide, Aloe Vera Extract, Allantoin, Licorice Extract, Calendula Oil, Geranium Oil, dan Olive Oil membuat wajahmu menjadi glowing dan tampil lebih bersinar.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-box">
-                    <img class="img-fluid" src="assets/img/serum7.jpeg">
-    
-                    <div class="product-desc">
-                        <div class="wrap-content">
-                            <div class="product-tag">
-                                <p class="tag type-tag">
-                                    Serum
-                                </p>
-                                <p class="tag date-tag">
-                                    New
-                                </p>
-                            </div>
-
-                            <h3 class="fs-lg">Scarlett | Hyalu B5 + Reishi Mushroom & Bifida Serum – Age Delay Series</h3>
-                            <p class="fs-sm disabled-text">Serum yang mengandung Allantoin, 4D Hyaluronic Acid, Black Gingseng Water, Calendula Flower Extract, Camellia Leaf Extract, dan Licorice Root Extract ini melindungi kulit dari sinar UV dan membantu merawat elastisitas kulit.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-box">
-                    <img class="img-fluid" src="assets/img/serum8.jpeg">
-    
-                    <div class="product-desc">
-                        <div class="wrap-content">
-                            <div class="product-tag">
-                                <p class="tag type-tag">
-                                    Serum
-                                </p>
-                                <p class="tag date-tag">
-                                    New
-                                </p>
-                            </div>
-
-                            <h3 class="fs-lg">Scarlett | Serum – Acne</h3>
-                            <p class="fs-sm disabled-text">Kandungan Tea Tree Leaf Water, Salicylic Acid, Jeju Centella Asiatica, Liquorice Extract dan Vitamin C membantu mengobati jerawat pada muka serta mencerahkan kulit dan mengontrol minyak pada kulit.</p>
-                        </div>
-                    </div>
-                </div>
+            <?php } ?>
             </div>
         </div>
 

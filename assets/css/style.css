@@ -68,6 +68,16 @@ hr.normal {
     background-color: var(--white-passive);
 }
 
+.btn-tertiary {
+    background-color: var(--primary-active);
+    color: var(--white-passive)
+}
+
+.btn-tertiary:hover {
+    background-color: var(--primary-passive);
+    cursor: pointer;
+}
+
 .btn-profile {
     background-color: var(--primary-active);
     color: var(--black)

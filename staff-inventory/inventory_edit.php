@@ -21,7 +21,7 @@ $rows  = mysqli_fetch_array($query);
             </tr>
             <tr>
                 <td><label class="fs-sm" for="product-desc-edit">Description </label></td>
-                <td><input name="product-desc-edit" id="product-desc-edit" type="text" value="<?=$rows['deskripsi'];?>" required></td>
+                <td><textarea name="product-desc-edit" id="product-desc-edit" rows="5" required><?=$rows['deskripsi'];?></textarea></td>
             </tr>
             <tr>
                 <td><label class="fs-sm" for="product-tag-edit">Tag </label></td>
