@@ -21,28 +21,20 @@ include "config/connection.php";
                 </a>
             </div>
             <hr class="custom" />
-            <a class="admin-nav" href="admin.php?menu=profile">
+            <a class="admin-nav" href="staff.php?menu=profile">
                 <h1 class="fs-md primary-text section-bar">PROFILE</h1>
             </a>
-            <a class="admin-nav" href="admin.php?menu=inventory">
+            <a class="admin-nav" href="staff.php?menu=inventory">
                 <h1 class="fs-md primary-text section-bar">INVENTORY</h1>
-            </a>
-            <a class="admin-nav" href="admin.php?menu=orders">
-                <h1 class="fs-md primary-text section-bar">ORDERS</h1>
-            </a>
-            <a class="admin-nav" href="admin.php?menu=sales">
-                <h1 class="fs-md primary-text section-bar">SALES</h1>
             </a>
         </div>
 
         <div class="right-container">
             <?php
             $menu=isset($_GET['menu'])?$_GET['menu']:"";
-            if($menu == "") { include "./profile/profile.php"; }
-            else if($menu == "inventory") { include "inventory/inventory.php"; }
-            else if($menu == "orders") { include "orders/orders.php"; }
-            else if($menu == "sales") { include "sales/sales.php"; }
-            else { include "profile/profile.php"; }
+            if($menu == "") { include "staff-profile/profile.php"; }
+            else if($menu == "inventory") { include "staff-inventory/inventory.php"; }
+            else { include "staff-profile/profile.php"; }
             ?>
         </div>
 </body>

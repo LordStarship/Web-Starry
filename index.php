@@ -14,7 +14,7 @@
                 <a href="index.php"><img class="header-logo" src="assets/img/logo-uncut 1.png" alt="Starry Logo"></a>
             </div>
             <div class="flex-container flex-row-reverse centered">
-                <a class="header-link" href="login.php">
+                <a class="header-link" href="login/login.php">
                     <img class="account-logo" src="assets/img/account.png">
                 </a>
                 <a class="header-link" href="#collaborators">Brands</a>

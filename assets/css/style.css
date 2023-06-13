@@ -694,6 +694,14 @@ hr.normal {
     margin-bottom: 50px;
 }
 
+.inventory-menu {
+    text-decoration: none;
+}
+
+.inventory-text {
+    text-align: center;
+}
+
 /* ================================================================ */
 /* Footer ========================================================= */
 
