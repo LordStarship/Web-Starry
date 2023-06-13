@@ -9,7 +9,7 @@ if(isset($_SESSION['acc']))
 
     if($rows['role'] == 'user') { header('location: ../user.php'); }
     else if($rows['role'] == 'admin') { header('location: ../staff.php'); }
-    else if($rows['role'] == 'user') { header('location: ../admin.php'); }
+    else if($rows['role'] == 'superadmin') { header('location: ../admin.php'); }
 }
 else {
 ?>
@@ -24,7 +24,7 @@ else {
     </head>
     <body>
     <div class="container">
-        <a href="index.php">
+        <a href="../index.php">
             <div class="account-top flex-container centered">
                 <img class="login-logo" src="../assets/img/logo-uncut 1.png">
             </div>

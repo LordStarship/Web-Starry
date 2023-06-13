@@ -4,7 +4,7 @@ $query = mysqli_query($conn, "SELECT * FROM account WHERE username = '$session'"
 $rows = mysqli_fetch_array($query);
 
 $edit = isset($_GET['edit'])?$_GET['edit']:"";
-$info_edit = "staff.php?menu=profile&action=edit&id=$rows[account_id]";
+$info_edit = "user.php?menu=profile&action=edit&id=$rows[account_id]";
 if ($edit == "")
 {
     include "profile_edit.php";
@@ -13,7 +13,7 @@ else
 {
 ?>
 <html>
-    <form action="staff-profile/password_update.php" method="post">
+    <form action="user-profile/password_update.php" method="post">
         <table class="profile-container">   
             <tr>
                 <td><label class="fs-sm" for="new-pass">New Password </label></td>

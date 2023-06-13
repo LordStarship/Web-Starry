@@ -22,7 +22,7 @@ if ($num == 0) {
         echo "<script>location.href='../staff.php'</script>"; 
     }
     else if ($role == 'user') {
-        echo ("<script>location.href='../account.php'</script>");
+        echo ("<script>location.href='../user.php'</script>");
     }
 }
 ?>
